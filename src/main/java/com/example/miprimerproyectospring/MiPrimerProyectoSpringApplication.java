@@ -12,8 +12,8 @@ public class MiPrimerProyectoSpringApplication {
     public static void main(String[] args) {
         SpringApplication.run(MiPrimerProyectoSpringApplication.class, args);
     }
-    @GetMapping
+    @GetMapping(path = "api/tati")
     public String saludar() {
-        return "hola mundo";
+        return "hola tati";
     }
 }
